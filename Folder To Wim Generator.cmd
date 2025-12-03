@@ -1,5 +1,6 @@
 @echo off
 setlocal enabledelayedexpansion
+chcp 65001 >nul
 title Folder To Wim Generator
 if not "%1"=="a" powershell -Command "Start-Process -FilePath '%~f0' -Verb RunAs -ArgumentList a" & exit
 :a
@@ -36,4 +37,5 @@ echo You can't leave this blank.
 echo Press any key to restart.
 pause >nul
 goto begining
+
 timeout /t 5 /nobreak >nul
