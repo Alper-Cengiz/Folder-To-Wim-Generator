@@ -37,6 +37,6 @@ echo You can't leave this blank.
 echo Press any key to restart.
 pause >nul
 goto begining
-
 timeout /t 5 /nobreak >nul
+
 
