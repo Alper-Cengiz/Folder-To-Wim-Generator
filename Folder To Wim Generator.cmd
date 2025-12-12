@@ -26,7 +26,7 @@ set folinfo="!foldir!\!folname!"
 timeout /t 1 /nobreak >nul
 set wiminfo="!wimdir!\!wimname!.wim"
 timeout /t 1 /nobreak >nul
-dism /Capture-Image /ImageFile:!wiminfo! /CaptureDir:!folinfo! /Name:"!wimname!"
+dism /Capture-Image /ImageFile:!wiminfo! /CaptureDir:!folinfo! /Name:"!wimname!" /Compress:LZX
 timeout /t 1 /nobreak >nul
 echo Press any key to exit.
 pause >nul
@@ -39,3 +39,4 @@ pause >nul
 goto begining
 
 timeout /t 5 /nobreak >nul
+
